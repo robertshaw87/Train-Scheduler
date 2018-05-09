@@ -1,0 +1,12 @@
+table {
+    width: 100%;
+}
+
+th {
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #000;
+}
+td, th {
+    padding: 5px;
+}

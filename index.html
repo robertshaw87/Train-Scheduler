@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+    <title>Train Scheduler</title>
+</head>
+
+<body class="container">
+    <div class="row">
+        <div class="jumbotron col text-center p-4">
+            <h1 class="display-4">Train Scheduler</h1>
+            <p class="lead">A Directory of Train Schedules and Arrival Times</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="card col p-0 m-0">
+            <div class="card-header bg-info text-light">Train Arrivals</div>
+            <div class="card-body p-2">
+                <table class="" id="data-display">
+                    <tr>
+                        <th>Train Name</th>
+                        <th>Destination</th>
+                        <th>Frequency (min)</th>
+                        <th>Next Arrival</th>
+                        <th>Minutes Away</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="card col p-0 m-0 mt-3 mb-3">
+            <div class="card-header bg-info text-light">Add Train</div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group row">
+                    <label for="train-name">Train Name</label>
+                    <input class="form-control" id="train-name" type="text">
+                    </div>
+                    <div class="form-group row">
+                        <label for="train-destination">Destination</label>
+                        <input class="form-control" id="train-destination" type="text">
+                    </div>
+                    <div class="form-group row">
+                        <label for="train-start">Start Time</label>
+                        <input class="form-control" id="train-start" step="60" type="time">
+                    </div>
+                    <div class="form-group row">
+                    <label for="train-frequency">Frequency (min)</label>
+                    <input class="form-control" id="train-frequency" type="number">
+                    </div>
+                    <button class="btn btn-primary" id="submit-train" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Moment.js -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+
+    <!-- My Javascript -->
+    <script src="assets/javascript/script.js"></script>
+</body>
+
+</html>
